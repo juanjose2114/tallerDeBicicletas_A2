@@ -1,7 +1,7 @@
 public class Bicicleta {
     //marca, tipo, color, serial, edad
-    public String marca, tipo, color, serial;
-    public int edad;
+    private String marca, tipo, color, serial;
+    private int edad;
 
     public Bicicleta(String marca, String tipo, String color, String serial, int edad){
         this.marca = marca;
