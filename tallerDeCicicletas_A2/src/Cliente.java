@@ -1,4 +1,3 @@
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class Cliente {
@@ -50,7 +49,23 @@ public class Cliente {
         return bicicletas;
     }
 
-    public void setBicicletas(ArrayList<Bicicleta> bicicletas) {
-        this.bicicletas = bicicletas;
+    public boolean agregarBicicleta(Bicicleta bicicleta){
+        if (buscarBicicleta(bicicleta.getSerial()) != null) return false;
+        return bicicletas.add(bicicleta);
+    }
+
+    public boolean eliminarBicicleta(String serial){
+        Bicicleta bicicleta = buscarBicicleta(serial);
+        if (bicicleta != null) return bicicletas.remove(bicicleta);
+        return false;
+    }
+
+    public Bicicleta buscarBicicleta(String serial){
+        for (Bicicleta bicicleta : bicicletas){
+            if (serial.equals(bicicleta.getSerial())){
+                return bicicleta;
+            }
+        }
+        return null;
     }
 }
