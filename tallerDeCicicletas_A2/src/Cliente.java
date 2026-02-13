@@ -1,32 +1,15 @@
 import java.util.ArrayList;
 
-public class Cliente {
+public class Cliente extends Persona {
 
-    private String nombre, id, telefono, direccion;
+    private String telefono, direccion;
     private ArrayList<Bicicleta> bicicletas;
 
     public Cliente(String nombre, String id, String telefono, String direccion){
         bicicletas = new ArrayList<>();
-        this.nombre = nombre;
-        this.id = id;
+        super(nombre, id);
         this.telefono = telefono;
         this.direccion = direccion;
-    }
-
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
     }
 
     public String getTelefono() {
