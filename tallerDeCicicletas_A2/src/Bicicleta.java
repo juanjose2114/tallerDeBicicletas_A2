@@ -1,9 +1,7 @@
 public class Bicicleta {
-    //marca, tipo, color, serial, edad
-    private String marca, tipo, color, serial;
-    private int edad;
+    private String marca, tipo, color, serial, edad;
 
-    public Bicicleta(String marca, String tipo, String color, String serial, int edad){
+    public Bicicleta(String marca, String tipo, String color, String serial, String edad){
         this.marca = marca;
         this.tipo = tipo;
         this.color = color;
@@ -39,11 +37,11 @@ public class Bicicleta {
         this.serial = serial;
     }
 
-    public int getEdad() {
+    public String getEdad() {
         return edad;
     }
 
-    public void setEdad(int edad) {
+    public void setEdad(String edad) {
         this.edad = edad;
     }
 
