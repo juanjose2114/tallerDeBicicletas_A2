@@ -1,4 +1,6 @@
-public class Mecanico extends Persona{
+package co.edu.uniquindio.poo.tallerdebicicletas.controller;
+
+public class Mecanico extends Persona {
 
     private Especializacion especializacion;
     private String codigo;
@@ -35,3 +37,4 @@ public class Mecanico extends Persona{
         this.especializacion = especializacion;
     }
 }
+

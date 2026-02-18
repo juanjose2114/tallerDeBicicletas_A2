@@ -1,3 +1,5 @@
+package co.edu.uniquindio.poo.tallerdebicicletas.controller;
+
 public class Repuesto {
 
     private String nombre, codigo;
@@ -23,3 +25,4 @@ public class Repuesto {
         this.nombre = nombre;
     }
 }
+

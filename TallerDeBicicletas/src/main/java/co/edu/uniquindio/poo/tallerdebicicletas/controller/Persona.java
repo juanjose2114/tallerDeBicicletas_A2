@@ -1,3 +1,5 @@
+package co.edu.uniquindio.poo.tallerdebicicletas.controller;
+
 public abstract class Persona {
 
     public String nombre, id;

@@ -1,3 +1,5 @@
+package co.edu.uniquindio.poo.tallerdebicicletas.controller;
+
 public class Bicicleta {
     private String marca, tipo, color, serial, edad;
 

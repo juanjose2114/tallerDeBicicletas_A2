@@ -1,3 +1,5 @@
+package co.edu.uniquindio.poo.tallerdebicicletas.controller;
+
 import java.util.ArrayList;
 
 public class Cliente extends Persona {
@@ -52,3 +54,4 @@ public class Cliente extends Persona {
         return null;
     }
 }
+
