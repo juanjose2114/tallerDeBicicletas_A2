@@ -1,4 +1,4 @@
-package co.edu.uniquindio.poo.tallerdebicicletas.controller;
+package co.edu.uniquindio.poo.tallerdebicicletas.model;
 
 import java.util.ArrayList;
 
@@ -27,6 +27,14 @@ public class Taller {
             }
         }
         return null;
+    }
+
+    public boolean eliminarCliente(String id){
+        Cliente cliente = buscarCliente(id);
+        if (cliente != null){
+            return clientes.remove(cliente);
+        }
+        return false;
     }
 
     public boolean registrarBicicleta(String idCliente, Bicicleta bicicleta){
@@ -60,6 +68,10 @@ public class Taller {
             }
         }
         return null;
+    }
+
+    public ArrayList<Orden> getOrdenes() {
+        return ordenes;
     }
 
     public ArrayList<Orden> ordenesPorDia(String fecha){
@@ -105,6 +117,10 @@ public class Taller {
     public boolean agregarRepuestoEnOrden(String repuesto, String orden){
         if (buscarRepuesto(repuesto) == null && buscarOrden(orden) == null) return false;
         return buscarOrden(orden).registrarRepuesto(buscarRepuesto(repuesto));
+    }
+
+    public ArrayList<Cliente> getClientes(){
+        return clientes;
     }
 
 }

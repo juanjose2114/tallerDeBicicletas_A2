@@ -1,4 +1,4 @@
-package co.edu.uniquindio.poo.tallerdebicicletas.controller;
+package co.edu.uniquindio.poo.tallerdebicicletas.model;
 
 public class Repuesto {
 

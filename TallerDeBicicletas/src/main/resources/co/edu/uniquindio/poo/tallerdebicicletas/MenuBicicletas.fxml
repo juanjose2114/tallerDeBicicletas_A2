@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #69a051;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.poo.tallerdebicicletas.viewControler.MenuBicicletasViewControler">
+   <children>
+      <Button fx:id="btn_volver" layoutX="534.0" layoutY="14.0" mnemonicParsing="false" onAction="#menuCliente" text="volver" />
+      <TextField fx:id="txt_nombre" layoutX="78.0" layoutY="27.0" />
+      <Label layoutX="25.0" layoutY="31.0" text="cliente" />
+      <Label layoutX="248.0" layoutY="31.0" text="cc: " />
+      <TextField fx:id="txt_id" layoutX="285.0" layoutY="27.0" />
+      <TextField fx:id="txt_tipo" layoutX="78.0" layoutY="143.0" />
+      <TextField fx:id="txt_marca" layoutX="78.0" layoutY="117.0" />
+      <TextField fx:id="txt_color" layoutX="78.0" layoutY="169.0" />
+      <TextField fx:id="txt_serial" layoutX="78.0" layoutY="195.0" />
+      <TextField fx:id="txt_edad" layoutX="78.0" layoutY="221.0" />
+      <TableView fx:id="tbl_historial" layoutX="293.0" layoutY="121.0" prefHeight="200.0" prefWidth="284.0">
+        <columns>
+          <TableColumn fx:id="cln_fechaH" prefWidth="75.0" text="fecha" />
+          <TableColumn fx:id="cln_describcionH" maxWidth="1.7976931348623157E308" prefWidth="75.0" text="Describcion" />
+        </columns>
+      </TableView>
+      <Label layoutX="11.0" layoutY="121.0" text="Marca" />
+      <Label layoutX="11.0" layoutY="147.0" text="Tipo" />
+      <Label layoutX="11.0" layoutY="173.0" text="Color" />
+      <Label layoutX="11.0" layoutY="199.0" text="Serial" />
+      <Label layoutX="11.0" layoutY="225.0" text="Edad" />
+      <Button fx:id="btn_buscar" layoutX="9.0" layoutY="296.0" mnemonicParsing="false" onAction="#buscarBicicleta" text="Buscar" />
+      <Button fx:id="btn_modificar" layoutX="78.0" layoutY="296.0" mnemonicParsing="false" onAction="#modificarBicicleta" text="Modificar" />
+      <Button fx:id="btn_quitar" layoutX="160.0" layoutY="296.0" mnemonicParsing="false" onAction="#quitarBicicleta" text="Quitar" />
+      <Button fx:id="btn_agregarBici" layoutX="228.0" layoutY="296.0" mnemonicParsing="false" onAction="#agregarBici" text="agregar" />
+   </children>
+</AnchorPane>

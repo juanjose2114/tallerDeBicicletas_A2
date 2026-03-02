@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="754.0" style="-fx-background-color: #69a051;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.poo.tallerdebicicletas.viewControler.MenuClientesViewControler">
+   <children>
+      <Label layoutX="43.0" layoutY="57.0" text="nombre" />
+      <Label layoutX="59.0" layoutY="98.0" text="id" />
+      <Label layoutX="42.0" layoutY="147.0" text="telefono" />
+      <Label layoutX="45.0" layoutY="192.0" text="direccion" />
+      <Button fx:id="btn_buscar" layoutX="44.0" layoutY="282.0" mnemonicParsing="false" onAction="#buscarCliente" text="Buscar" />
+      <Button fx:id="btn_actualizar" layoutX="115.0" layoutY="282.0" mnemonicParsing="false" onAction="#actualizarCliente" text="Actualizar" />
+      <Button fx:id="btn_bicicletas" layoutX="431.0" layoutY="308.0" mnemonicParsing="false" onAction="#menuBicicletas" text="agregar/quitar/modificarr" />
+      <TextField fx:id="txt_nombre" layoutX="109.0" layoutY="53.0" />
+      <TextField fx:id="txt_id" layoutX="109.0" layoutY="94.0" />
+      <TextField fx:id="txt_telefono" layoutX="109.0" layoutY="143.0" />
+      <TextField fx:id="txt_direccion" layoutX="109.0" layoutY="188.0" />
+      <TableView fx:id="tbl_bicicletas" layoutX="318.0" layoutY="43.0" prefHeight="200.0" prefWidth="378.0">
+        <columns>
+          <TableColumn fx:id="cln_marca" prefWidth="75.0" text="Marca" />
+          <TableColumn fx:id="cln_tipo" prefWidth="75.0" text="Tipo" />
+            <TableColumn fx:id="cln_serial" prefWidth="75.0" text="Serial" />
+            <TableColumn fx:id="cln_edad" prefWidth="75.0" text="Edad" />
+            <TableColumn fx:id="cln_color" prefWidth="75.0" text="Color" />
+        </columns>
+      </TableView>
+      <Button fx:id="btn_volver" layoutX="697.0" layoutY="14.0" mnemonicParsing="false" onAction="#menuInicio" text="Volver" />
+      <Button fx:id="btn_quitar" layoutX="207.0" layoutY="282.0" mnemonicParsing="false" onAction="#quitar" text="Quitar" />
+      <TextField fx:id="txt_serial" layoutX="427.0" layoutY="281.0" prefHeight="26.0" prefWidth="160.0" promptText="serial bicicleta seleccionada" />
+   </children>
+</AnchorPane>

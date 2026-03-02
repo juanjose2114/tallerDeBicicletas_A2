@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="534.0" prefWidth="600.0" style="-fx-background-color: #69a051;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.poo.tallerdebicicletas.viewControler.MenuOrdenesViewControler">
+   <children>
+      <Label layoutX="70.0" layoutY="71.0" text="Codigo" />
+      <Label layoutX="70.0" layoutY="100.0" text="Dueño" />
+      <Label layoutX="70.0" layoutY="129.0" text="Mecanico" />
+      <Label layoutX="70.0" layoutY="158.0" text="Describcion" />
+      <Label layoutX="72.0" layoutY="191.0" text="Fecha" />
+      <TextField layoutX="151.0" layoutY="67.0" />
+      <TextField layoutX="152.0" layoutY="96.0" />
+      <TextField layoutX="152.0" layoutY="125.0" />
+      <TextField layoutX="152.0" layoutY="154.0" />
+      <TextField layoutX="152.0" layoutY="187.0" />
+      <TableView layoutX="70.0" layoutY="267.0" prefHeight="200.0" prefWidth="426.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="Codigo" />
+          <TableColumn prefWidth="75.0" text="Dueño" />
+            <TableColumn prefWidth="75.0" text="Mecanico" />
+            <TableColumn prefWidth="75.0" text="Describcion" />
+            <TableColumn prefWidth="75.0" text="Fecha" />
+        </columns>
+      </TableView>
+      <Button layoutX="534.0" layoutY="14.0" mnemonicParsing="false" text="volver" />
+      <Button layoutX="347.0" layoutY="88.0" mnemonicParsing="false" text="Buscar" />
+      <Button layoutX="347.0" layoutY="125.0" mnemonicParsing="false" text="Agregar" />
+   </children>
+</AnchorPane>

@@ -1,4 +1,4 @@
-package co.edu.uniquindio.poo.tallerdebicicletas.controller;
+package co.edu.uniquindio.poo.tallerdebicicletas.model;
 
 public abstract class Persona {
 
@@ -21,7 +21,4 @@ public abstract class Persona {
         return id;
     }
 
-    public void setId(String id) {
-        this.id = id;
-    }
 }

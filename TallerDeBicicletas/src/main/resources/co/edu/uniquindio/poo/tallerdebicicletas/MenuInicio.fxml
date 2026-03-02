@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #69a051;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.poo.tallerdebicicletas.viewControler.MenuInicioViewControler">
+    <children>
+      <Label layoutX="215.0" layoutY="25.0" text="Menu Taller de Bicicletas" />
+      <Button fx:id="btn_clientes" layoutX="219.0" layoutY="93.0" mnemonicParsing="false" onAction="#openMenuClientes" text="Administrar Clientes" />
+      <Button fx:id="btn_mecanicos" layoutX="212.0" layoutY="148.0" mnemonicParsing="false" onAction="#openMenuMecanicos" text="Administrar Mecanicos" />
+      <Button fx:id="btn_ordenes" layoutX="218.0" layoutY="200.0" mnemonicParsing="false" onAction="#openMenuOrdenes" text="Administrar Ordenes" />
+    </children>
+</AnchorPane>

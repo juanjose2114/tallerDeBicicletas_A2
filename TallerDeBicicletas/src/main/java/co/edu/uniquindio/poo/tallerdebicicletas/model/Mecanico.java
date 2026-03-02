@@ -1,6 +1,6 @@
-package co.edu.uniquindio.poo.tallerdebicicletas.controller;
+package co.edu.uniquindio.poo.tallerdebicicletas.model;
 
-public class Mecanico extends Persona {
+public class  Mecanico extends Persona {
 
     private Especializacion especializacion;
     private String codigo;
